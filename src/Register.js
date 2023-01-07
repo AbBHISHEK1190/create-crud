@@ -5,7 +5,7 @@ function Register() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+// const history=useHistory();
   const signup=async ()=>{
 
     let item = { username, email, password };
@@ -20,6 +20,7 @@ function Register() {
     });
     result=await result.json();
     console.warn("result",result);
+    // history.push('/add');
   }
   function signup_old() {
     let item = { username, email, password };
